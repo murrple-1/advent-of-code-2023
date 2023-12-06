@@ -29,7 +29,6 @@ def main():
                         reading_number = True
 
     print(sum(engine_numbers))
-    # print("\n".join(str(i) for i in engine_numbers))
 
 
 def _is_engine_num(line_list: list[str], start_j: int, end_j: int, i: int) -> bool:
@@ -41,7 +40,6 @@ def _is_engine_num(line_list: list[str], start_j: int, end_j: int, i: int) -> bo
             if (c := line_list[i_][j_]) not in string.digits and c != ".":
                 return True
     return False
-    # return True
 
 
 if __name__ == "__main__":
