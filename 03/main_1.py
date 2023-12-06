@@ -33,8 +33,8 @@ def main():
 
 
 def _is_engine_num(line_list: list[str], start_j: int, end_j: int, i: int) -> bool:
-    for i_ in range(max(i - 1, 0), min(i + 3, len(line_list)), 1):
-        for j_ in range(max(start_j - 1, 0), min(end_j + 2, len(line_list[i])), 1):
+    for i_ in range(max(i - 1, 0), min(i + 2, len(line_list)), 1):
+        for j_ in range(max(start_j - 1, 0), min(end_j + 1, len(line_list[i])), 1):
             if i_ == i and start_j < j_ < end_j:
                 continue
 
